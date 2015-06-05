@@ -2,11 +2,17 @@
 /* global require, module */
 var mergeTrees = require('broccoli-merge-trees');
 var funnel = require('broccoli-funnel');
+
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
-//var isProduction = ( process.env.EMBER_ENV || 'development' ) === 'production';
 
 var app = new EmberAddon();
+/*
+  This Brocfile specifes the options for the dummy test app of this
+  addon, located in `/tests/dummy`
 
+  This Brocfile does *not* influence how the addon or the app using it
+  behave. You most likely want to be modifying `./index.js` or app's Brocfile
+*/
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
